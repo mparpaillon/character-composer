@@ -1,0 +1,22 @@
+{
+  "name": "character-composer",
+  "version": "0.0.1",
+  "description": "Compose a character from any RPG system (D&D5E, 3.5, Pathfinder, etc)",
+  "dependencies": {
+    "deep-assign": "^2.0.0",
+    "get-value": "^3.0.1",
+    "expr-eval": "^1.2.2",
+    "json-stable-stringify": "^1.0.1",
+    "set-value": "^3.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mparpaillon/character-composer.git"
+  },
+  "author": "mparpaillon",
+  "bugs": {
+    "url": "https://github.com/mparpaillon/character-composer/issues"
+  },
+  "homepage": "https://github.com/mparpaillon/character-composer#readme"
+}

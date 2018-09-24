@@ -1,0 +1,23 @@
+{
+  "_calculations": [
+    {
+      "prop": "ability_scores.dex",
+      "formula": "x+2",
+      "params": { "x": "ability_scores.dex" }
+    }
+  ],
+  "speed": 30,
+  "size": "medium",
+  "passive_abilities": {
+    "darkvision": { "range": 60 }
+  },
+  "languages": {
+    "common": true,
+    "elvish": true
+  },
+  "proficiencies": {
+    "skills": {
+      "perception": true
+    }
+  }
+}

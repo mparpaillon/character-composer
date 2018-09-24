@@ -1,0 +1,14 @@
+{
+  "race": "elf",
+  "subrace": "elf_high",
+  "class": "barbarian",
+  "level": 1,
+  "ability_scores": {
+    "str": 16,
+    "dex": 13,
+    "con": 15,
+    "int": 9,
+    "wis": 12,
+    "cha": 11
+  }
+}
