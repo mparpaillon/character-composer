@@ -4,21 +4,21 @@ const deepAssign = require('deep-assign');
 const runCalculations = require('./utils/calculations.util');
 const runConditions = require('./utils/conditions.util');
 
-const playerDatas = JSON.parse(fs.readFileSync('./datas/player.json'));
-const systemDatas = JSON.parse(fs.readFileSync('./datas/systems/dnd5e.json'));
+const playerData = JSON.parse(fs.readFileSync('./data/player.json'));
+const systemData = JSON.parse(fs.readFileSync('./data/systems/dnd5e.json'));
 
-// The "player._extends" property tells the program which datas it should inherit from
+// The "player._extends" property tells the program which data it should inherit from
 
-systemDatas.player._extends.forEach(extend => {
+systemData.player._extends.forEach(extend => {
   // Ex: gnome.json
-  const extendDatas = JSON.parse(fs.readFileSync(`./datas/${extend.folder}/${playerDatas[extend.property_value]}.json`));
+  const extendData = JSON.parse(fs.readFileSync(`./data/${extend.folder}/${playerData[extend.property_value]}.json`));
 
-  runConditions(playerDatas, extendDatas);
-  runCalculations(playerDatas, extendDatas);
+  runConditions(playerData, extendData);
+  runCalculations(playerData, extendData);
   
-  deepAssign(playerDatas, extendDatas);
+  deepAssign(playerData, extendData);
 });
 
-runCalculations(playerDatas, systemDatas.player);
+runCalculations(playerData, systemData.player);
 
-console.log(JSON.stringify(playerDatas, '', 4));
+console.log(JSON.stringify(playerData, '', 4));

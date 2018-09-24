@@ -1,0 +1,10 @@
+{
+  "_choices": [
+    {
+      "prop": "level",
+      "input": "range",
+      "range_min": 1,
+      "range_max": 20
+    }
+  ]
+}

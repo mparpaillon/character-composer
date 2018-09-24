@@ -10,7 +10,7 @@ The final idea is to be able to include any RPG system just by adding json files
 
 Install all the dependencies `npm install`
 
-Run `node merge.js` to get a calculated JSON file with all the player datas
+Run `node merge.js` to get a calculated JSON file with all the player data
 
 To test the script, try to change the `player.json` ability scores for instance or the elf dexterity bonus in `elf.json`
 You can edit all the json files as you like and even add classes, races, etc
@@ -58,7 +58,7 @@ __Example:__ 9m = 30 feet
 ### Skills
 
 We choose to ignore too specific rules (like "Fey ancestry" passive ability) in calculations.
-Those abilities will be only visible in translated datas to be displayed as simple text.
+Those abilities will be only visible in translated data to be displayed as simple text.
 
 A skill can have parameters. Each param value is used to replace placeholders in the skill translated description
 
