@@ -15,6 +15,11 @@ Run `node merge.js` to get a calculated JSON file with all the player datas
 To test the script, try to change the `player.json` ability scores for instance or the elf dexterity bonus in `elf.json`
 You can edit all the json files as you like and even add classes, races, etc
 
+## Conditions
+
+This program can handle conditions
+@todo Add example
+
 ## Alteration and override
 
 We have to handle 2 behaviors:

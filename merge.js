@@ -1,7 +1,8 @@
 const fs = require('fs');
 const deepAssign = require('deep-assign');
-const stringify = require('json-stable-stringify');
-const runCalculations = require('./calculate.util');
+
+const runCalculations = require('./utils/calculations.util');
+const runConditions = require('./utils/conditions.util');
 
 const playerDatas = JSON.parse(fs.readFileSync('./datas/player.json'));
 const systemDatas = JSON.parse(fs.readFileSync('./datas/systems/dnd5e.json'));
@@ -12,14 +13,12 @@ systemDatas.player._extends.forEach(extend => {
   // Ex: gnome.json
   const extendDatas = JSON.parse(fs.readFileSync(`./datas/${extend.folder}/${playerDatas[extend.property_value]}.json`));
 
-  runCalculations(playerDatas, extendDatas._calculations);
-  delete extendDatas._calculations;
+  runConditions(playerDatas, extendDatas);
+  runCalculations(playerDatas, extendDatas);
   
   deepAssign(playerDatas, extendDatas);
 });
 
-runCalculations(playerDatas, systemDatas.player._calculations);
+runCalculations(playerDatas, systemDatas.player);
 
-// const orderedDatas = JSON.parse(stringify(playerDatas));
-const orderedDatas = playerDatas;
-console.log(JSON.stringify(orderedDatas, '', 4));
+console.log(JSON.stringify(playerDatas, '', 4));

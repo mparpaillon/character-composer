@@ -1,0 +1,9 @@
+{
+  "_calculations": [
+    {
+      "prop": "ability_scores.con",
+      "formula": "x+1",
+      "params": { "x": "ability_scores.con" }
+    }
+  ]
+}

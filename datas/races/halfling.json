@@ -1,0 +1,15 @@
+{
+  "_calculations": [
+    {
+      "prop": "ability_scores.dex",
+      "formula": "x+2",
+      "params": { "x": "ability_scores.dex" }
+    }
+  ],
+  "speed": 25,
+  "size": "small",
+  "languages": {
+    "common": true,
+    "halfling": true
+  }
+}

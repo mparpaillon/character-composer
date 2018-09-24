@@ -1,0 +1,19 @@
+{
+    "_calculations": [
+      {
+        "prop": "ability_scores.wis",
+        "formula": "x+1",
+        "params": { "x": "ability_scores.wis" }
+      }
+    ],
+    "proficiencies": {
+      "weapons": {
+        "longsword": true,
+        "shortsword": true,
+        "shortbow": true,
+        "longbow": true
+      }
+    },
+    "speed": 35
+  }
+  

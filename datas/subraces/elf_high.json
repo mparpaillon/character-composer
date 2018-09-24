@@ -6,6 +6,13 @@
       "params": { "x": "ability_scores.int" }
     }
   ],
+  "_choices": [
+    {
+      "prop": "languages",
+      "quantity": 1,
+      "options_source": "languages"
+    }
+  ],
   "proficiencies": {
     "weapons": {
       "longsword": true,
@@ -20,6 +27,5 @@
       "value": 1
     },
     "spellcasting_ability": "int"
-  },
-  "languages_extra": 1
+  }
 }

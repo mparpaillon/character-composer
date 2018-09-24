@@ -8,32 +8,32 @@
     "_calculations": [
       {
         "prop": "ability_scores_mod.str",
-        "formula": "floor((x-10)/2)",
+        "formula": "mod(x)",
         "params": { "x": "ability_scores.str" }
       },
       {
         "prop": "ability_scores_mod.dex",
-        "formula": "floor((x-10)/2)",
+        "formula": "mod(x)",
         "params": { "x": "ability_scores.dex" }
       },
       {
         "prop": "ability_scores_mod.con",
-        "formula": "floor((x-10)/2)",
+        "formula": "mod(x)",
         "params": { "x": "ability_scores.con" }
       },
       {
         "prop": "ability_scores_mod.int",
-        "formula": "floor((x-10)/2)",
+        "formula": "mod(x)",
         "params": { "x": "ability_scores.int" }
       },
       {
         "prop": "ability_scores_mod.wis",
-        "formula": "floor((x-10)/2)",
+        "formula": "mod(x)",
         "params": { "x": "ability_scores.wis" }
       },
       {
         "prop": "ability_scores_mod.cha",
-        "formula": "floor((x-10)/2)",
+        "formula": "mod(x)",
         "params": { "x": "ability_scores.cha" }
       },
       {

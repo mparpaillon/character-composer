@@ -1,0 +1,41 @@
+{
+  "_conditions": [
+    {
+      "prop": "capacities.faerie_fire",
+      "condition": "hasLevel(x, 3)",
+      "params": { "x": "level" },
+      "value": {
+        "ammo": 1,
+        "spellcasting_ability": "cha",
+        "reset": "long_rest"
+      }
+    },
+    {
+      "prop": "capacities.darkness",
+      "condition": "hasLevel(x, 5)",
+      "params": { "x": "level" },
+      "value": {
+        "ammo": 1,
+        "spellcasting_ability": "cha",
+        "reset": "long_rest"
+      }
+    }
+  ],
+  "passive_abilities": {
+    "darkvision": { "range": 120 }
+  },
+  "spells": {
+    "0": {
+      "dancing_lights": {
+        "spellcasting_ability": "cha"
+      }
+    }
+  },
+  "proficiencies": {
+    "weapons": {
+      "rapier": true,
+      "shortsword": true,
+      "hand_crossbow": true
+    }
+  }
+}
